@@ -22,6 +22,8 @@ modThreeTransition Q2 One = Q2
 --
 -- >>> isAccepted modThreeDFA [Zero]  -- 0 in decimal
 -- True
+-- >>> isAccepted modThreeDFA []  -- empty string represents 0
+-- True
 modThreeDFA :: DFA ModThreeState BitDigit
 modThreeDFA =
   DFA
